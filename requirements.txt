@@ -1,8 +1,6 @@
 streamlit
 openai
 pandas
-numpy
-scikit-learn
 random
 datetime
 os
