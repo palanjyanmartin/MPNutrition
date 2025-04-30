@@ -7,8 +7,7 @@ import os
 
 # --- App Config ---
 st.set_page_config(page_title="Nutrition Assistant", page_icon="🥗")
-client = openai.OpenAI(api_key="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")
-
+client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 # --- CSV for History ---
 history_file = "/Users/martinpalanjyan/Desktop/recipe_history.csv"
 
