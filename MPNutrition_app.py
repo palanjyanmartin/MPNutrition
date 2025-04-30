@@ -9,7 +9,8 @@ import os
 st.set_page_config(page_title="Nutrition Assistant", page_icon="🥗")
 client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 # --- CSV for History ---
-history_file = "/Users/martinpalanjyan/Desktop/recipe_history.csv"
+current_dir = os.path.dirname(os.path.abspath(__file__))
+history_file = os.path.join(current_dir, 'recipe_history.csv')
 
 def initialize_csv():
     if not pd.io.common.file_exists(history_file):
