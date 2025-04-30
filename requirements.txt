@@ -1,6 +1,5 @@
 streamlit
 openai
 pandas
-random
 datetime
 os
