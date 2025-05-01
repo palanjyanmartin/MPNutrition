@@ -146,7 +146,7 @@ def generate_recipe_from_preferences(preference_text):
         return f"Error: {e} 😞"
 
 # --- Sidebar Navigation ---
-st.sidebar.title("🍽️ Navigation")
+st.sidebar.title("🍽️ MPNutrition")
 page = st.sidebar.radio("Go to", ["🥗 Estimate Nutrition", "🍝 Generate Recipe by Preference"])
 
 # --- Page 1: Estimate Nutrition ---
