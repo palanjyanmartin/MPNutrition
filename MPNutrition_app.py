@@ -59,7 +59,7 @@ def estimate_nutrition_gpt(recipe_name, ingredients):
     """
     try:
         response = client.chat.completions.create(
-            model="gpt-4",
+            model="gpt-4o",
             messages=[
                 {"role": "system", "content": "You are a concise and fun nutrition expert."},
                 {"role": "user", "content": prompt}
