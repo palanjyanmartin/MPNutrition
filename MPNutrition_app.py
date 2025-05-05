@@ -135,7 +135,7 @@ def generate_recipe_from_preferences(preference_text):
     """
     try:
         response = client.chat.completions.create(
-            model="gpt-4",
+            model="gpt-4o",
             messages=[
                 {"role": "system", "content": "You are a creative and engaging recipe generator."},
                 {"role": "user", "content": prompt}
